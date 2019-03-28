@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ParentOfAll"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnStartTheGame"
+        android:onClick="startTheGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luaj"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="455dp"
+        app:layout_constraintBottom_toBottomOf="@id/ParentOfAll"
+        app:layout_constraintRight_toRightOf="@id/ParentOfAll"
+        app:layout_constraintLeft_toLeftOf="@id/ParentOfAll"
+        app:layout_constraintTop_toBottomOf="@id/etplayer2name"/>
+
+    <EditText
+        android:id="@+id/etplayer2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Shkruaj emrin"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="324dp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@id/etplayer1name"
+        app:layout_constraintRight_toRightOf="@id/ParentOfAll"
+        app:layout_constraintBottom_toBottomOf="@id/ParentOfAll"
+        />
+
+    <TextView
+        android:id="@+id/tvplayer2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lojtari 2"
+        android:textSize="18dp"
+        android:background="#ff0000"
+        app:layout_constraintBottom_toBottomOf="@id/ParentOfAll"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintLeft_toLeftOf="@id/ParentOfAll"
+        app:layout_constraintRight_toLeftOf="@id/etplayer2name"
+        app:layout_constraintTop_toTopOf="@id/ParentOfAll"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <TextView
+        android:id="@+id/tvplayer1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:text="Lojtari 1"
+        android:textSize="18dp"
+        android:background="#ffff00"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintLeft_toLeftOf="@id/ParentOfAll"
+        app:layout_constraintRight_toLeftOf="@id/etplayer1name"
+        app:layout_constraintTop_toTopOf="@id/ParentOfAll" />
+
+    <EditText
+        android:id="@+id/etplayer1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/ParentOfAll"
+        app:layout_constraintTop_toTopOf="@id/ParentOfAll"
+        app:layout_constraintRight_toRightOf="@id/ParentOfAll"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Shkruaj emrin"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497">
+
+
+        <ImageView
+
+            android:id="@+id/image0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="drop"
+            android:tag="8" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/winningLayout"
+        android:layout_width="368dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+
+            android:paddingTop="15sp"
+            android:id="@+id/mesazhiFitues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Button
+            android:onClick="playAgain"
+            android:id="@+id/playAgain"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:text="@string/luaj_perseri"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
